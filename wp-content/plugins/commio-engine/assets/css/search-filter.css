@@ -1,0 +1,131 @@
+/* Commio Engine - Search and Filter Module Styles */
+
+.commio-search-filter-wrapper {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+}
+
+.commio-search-form h3 {
+    margin-top: 0;
+}
+
+.commio-search-fields {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.commio-filter-item {
+    border: 1px solid #eee;
+    padding: 10px;
+    background-color: #fff;
+    flex-grow: 1;
+    min-width: 200px; /* Adjust as needed */
+}
+
+.commio-filter-item label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.commio-filter-item input[type="search"],
+.commio-filter-item input[type="text"],
+.commio-filter-item select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.commio-filter-item ul {
+    list-style: none;
+    padding-left: 0;
+    max-height: 150px; /* For checkbox lists */
+    overflow-y: auto; /* For checkbox lists */
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+.commio-filter-item ul li label {
+    font-weight: normal;
+}
+.commio-filter-item ul li input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+
+.commio-search-submit input[type="submit"] {
+    padding: 10px 15px;
+    background-color: #0073aa; /* WordPress blue */
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.commio-search-submit input[type="submit"]:hover {
+    background-color: #005a87;
+}
+
+/* Search Results */
+.commio-search-results {
+    margin-top: 20px;
+    border-top: 2px solid #0073aa;
+    padding-top: 15px;
+}
+
+.commio-search-results h3 {
+    margin-top: 0;
+}
+
+.commio-search-results ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.commio-search-results ul li {
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px dotted #ccc;
+}
+
+.commio-search-results ul li:last-child {
+    border-bottom: none;
+}
+
+.commio-search-results h4 a {
+    text-decoration: none;
+}
+
+.commio-search-no-results p {
+    font-style: italic;
+    color: #777;
+}
+
+/* Pagination */
+.commio-search-pagination {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.commio-search-pagination .page-numbers {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 0 2px;
+    border: 1px solid #ddd;
+    text-decoration: none;
+}
+
+.commio-search-pagination .page-numbers.current {
+    background-color: #0073aa;
+    color: white;
+    border-color: #0073aa;
+}
+
+.commio-search-pagination a.page-numbers:hover {
+    background-color: #f0f0f0;
+}
